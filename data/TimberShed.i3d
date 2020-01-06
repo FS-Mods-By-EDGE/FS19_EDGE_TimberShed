@@ -6,17 +6,30 @@
   </Asset>
 
   <Files>
-    <File fileId="1" filename="textures/TimberShed_diffuse.dds"/>
-    <File fileId="2" filename="textures/TimberShed_normal.dds"/>
+    <File fileId="1" filename="textures/Concrete02_diffuse.dds"/>
+    <File fileId="2" filename="textures/Concrete02_normal.dds"/>
+    <File fileId="3" filename="textures/Concrete02_specular.dds"/>
+    <File fileId="4" filename="textures/TimberShed_diffuse.dds"/>
+    <File fileId="5" filename="textures/TimberShed_normal.dds"/>
+    <File fileId="6" filename="textures/TimberShed_specular.dds"/>
   </Files>
 
 
   <Materials>
-    <Material name="Timber_Shed_mat" materialId="4">
+    <Material name="Walls_mat" materialId="5">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="Floor_mat" materialId="4">
       <Texture fileId="1"/>
       <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
     </Material>
-    <Material name="lambert1" materialId="5" diffuseColor="0.239216 0.282353 0.466667 1">
+    <Material name="Timber_Shed_mat" materialId="6">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
     </Material>
   </Materials>
 
@@ -29,10 +42,12 @@
   </Dynamics>
 
   <Scene>
-    <Shape shapeId="1" name="Timber_Shed" static="true" nodeId="8" materialIds="4,5" castsShadows="true" receiveShadows="true"/>
-    <Light name="light" translation="89.0683 400 0" rotation="-40 0 -30" nodeId="9" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" numShadowMapSplits="3" shadowMapSplitDistance0="16.5466" shadowMapSplitDistance1="35.9759" shadowMapSplitDistance2="80" shadowMapSplitDistance3="80" decayRate="4" range="500">
-      <Light name="light" nodeId="10" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" numShadowMapSplits="3" shadowMapSplitDistance0="16.5466" shadowMapSplitDistance1="35.9759" shadowMapSplitDistance2="80" shadowMapSplitDistance3="80" decayRate="4" range="500"/>
+    <Light name="light" translation="89.0683 400 0" rotation="-40 0 -30" nodeId="11" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" numShadowMapSplits="3" shadowMapSplitDistance0="16.5466" shadowMapSplitDistance1="35.9759" shadowMapSplitDistance2="80" shadowMapSplitDistance3="80" decayRate="4" range="500">
+      <Light name="light" nodeId="12" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" numShadowMapSplits="3" shadowMapSplitDistance0="16.5466" shadowMapSplitDistance1="35.9759" shadowMapSplitDistance2="80" shadowMapSplitDistance3="80" decayRate="4" range="500"/>
     </Light>
+    <Shape shapeId="1" name="Concrete_Floor" static="true" clipDistance="400" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    <Shape shapeId="2" name="Timber_shed" static="true" clipDistance="400" nodeId="14" materialIds="6" castsShadows="true" receiveShadows="true"/>
+    <Shape shapeId="3" name="Concrete_Walls" static="true" clipDistance="400" nodeId="15" materialIds="5" castsShadows="true" receiveShadows="true"/>
   </Scene>
 
 </i3D>

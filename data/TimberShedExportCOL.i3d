@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="PillarShed" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="textures/Concrete02_diffuse.dds"/>
+    <File fileId="4" filename="textures/Concrete02_normal.dds"/>
+    <File fileId="1" filename="textures/TimberShed_diffuse.dds"/>
+    <File fileId="2" filename="textures/TimberShed_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Timber_Shed_mat" materialId="5">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="Floor_mat" materialId="4">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="TimberShedExportCOL.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="Shed_Col" nodeId="12"/>
+    <TransformGroup name="Timber_Shed" nodeId="13">
+      <TransformGroup name="polySurface1" nodeId="14"/>
+      <TransformGroup name="polySurface2" nodeId="15"/>
+      <TransformGroup name="polySurface3" nodeId="16"/>
+      <TransformGroup name="polySurface4" nodeId="17"/>
+      <TransformGroup name="polySurface5" nodeId="18"/>
+      <TransformGroup name="polySurface6" nodeId="19"/>
+      <TransformGroup name="polySurface7" nodeId="20"/>
+      <TransformGroup name="polySurface8" nodeId="21"/>
+      <TransformGroup name="polySurface9" nodeId="22"/>
+      <TransformGroup name="polySurface10" nodeId="23"/>
+      <TransformGroup name="polySurface11" nodeId="24"/>
+      <TransformGroup name="polySurface12" nodeId="25"/>
+      <TransformGroup name="polySurface13" nodeId="26"/>
+      <TransformGroup name="polySurface14" nodeId="27"/>
+      <TransformGroup name="polySurface15" nodeId="28"/>
+      <TransformGroup name="polySurface16" nodeId="29"/>
+      <TransformGroup name="polySurface17" nodeId="30"/>
+      <TransformGroup name="polySurface18" nodeId="31"/>
+      <Shape shapeId="1" name="polySurface19" static="true" nodeId="32" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="col01" translation="3 7 3.875" nodeId="33"/>
+      <TransformGroup name="col1" translation="0.00130881 7 3.875" nodeId="34"/>
+      <TransformGroup name="col2" translation="-3.00515 7 3.875" nodeId="35"/>
+      <TransformGroup name="col3" translation="-6.00065 7 3.875" nodeId="36"/>
+      <TransformGroup name="col4" translation="-9.00599 7 3.875" nodeId="37"/>
+      <TransformGroup name="col5" translation="5.99797 7 3.875" nodeId="38"/>
+      <TransformGroup name="col6" translation="8.99544 7 3.875" nodeId="39"/>
+      <TransformGroup name="polySurface20" nodeId="40"/>
+    </TransformGroup>
+    <Shape shapeId="2" name="Concrete_Floor" static="true" nodeId="41" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    <Shape shapeId="3" name="Concrete_Walls" static="true" nodeId="42" materialIds="4" castsShadows="true" receiveShadows="true"/>
+    <Shape shapeId="4" name="col_RoofBeams" static="true" nodeId="43" materialIds="5" castsShadows="true" receiveShadows="true"/>
+    <Shape shapeId="5" name="Col_Roof" static="true" nodeId="44" materialIds="5" castsShadows="true" receiveShadows="true"/>
+  </Scene>
+
+</i3D>
