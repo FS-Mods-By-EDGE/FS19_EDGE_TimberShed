@@ -6,30 +6,38 @@
   </Asset>
 
   <Files>
-    <File fileId="1" filename="textures/Concrete02_diffuse.dds"/>
-    <File fileId="2" filename="textures/Concrete02_normal.dds"/>
-    <File fileId="3" filename="textures/Concrete02_specular.dds"/>
-    <File fileId="4" filename="textures/TimberShed_diffuse.dds"/>
-    <File fileId="5" filename="textures/TimberShed_normal.dds"/>
-    <File fileId="6" filename="textures/TimberShed_specular.dds"/>
+    <File fileId="4" filename="textures/Concrete02_diffuse.dds"/>
+    <File fileId="5" filename="textures/Concrete02_normal.dds"/>
+    <File fileId="6" filename="textures/Concrete02_specular.dds"/>
+    <File fileId="7" filename="textures/EDGE_Logo.dds"/>
+    <File fileId="8" filename="textures/EDGE_Logo_normal.dds"/>
+    <File fileId="9" filename="textures/EDGE_Logo_specular.dds"/>
+    <File fileId="1" filename="textures/TimberShed_diffuse.dds"/>
+    <File fileId="2" filename="textures/TimberShed_normal.dds"/>
+    <File fileId="3" filename="textures/TimberShed_specular.dds"/>
   </Files>
 
 
   <Materials>
-    <Material name="Walls_mat" materialId="5">
-      <Texture fileId="1"/>
-      <Normalmap fileId="2" bumpDepth="2"/>
-      <Glossmap fileId="3"/>
+    <Material name="Walls_mat" materialId="4">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5" bumpDepth="2"/>
+      <Glossmap fileId="6"/>
     </Material>
-    <Material name="Floor_mat" materialId="4">
+    <Material name="Floor_mat" materialId="5">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="Timber_Shed_mat" materialId="6">
       <Texture fileId="1"/>
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
     </Material>
-    <Material name="Timber_Shed_mat" materialId="6">
-      <Texture fileId="4"/>
-      <Normalmap fileId="5"/>
-      <Glossmap fileId="6"/>
+    <Material name="Decals_mat" materialId="18">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
     </Material>
   </Materials>
 
@@ -42,12 +50,34 @@
   </Dynamics>
 
   <Scene>
-    <Light name="light" translation="89.0683 400 0" rotation="-40 0 -30" nodeId="11" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" numShadowMapSplits="3" shadowMapSplitDistance0="16.5466" shadowMapSplitDistance1="35.9759" shadowMapSplitDistance2="80" shadowMapSplitDistance3="80" decayRate="4" range="500">
-      <Light name="light" nodeId="12" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" numShadowMapSplits="3" shadowMapSplitDistance0="16.5466" shadowMapSplitDistance1="35.9759" shadowMapSplitDistance2="80" shadowMapSplitDistance3="80" decayRate="4" range="500"/>
-    </Light>
-    <Shape shapeId="1" name="Concrete_Floor" static="true" clipDistance="400" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true"/>
-    <Shape shapeId="2" name="Timber_shed" static="true" clipDistance="400" nodeId="14" materialIds="6" castsShadows="true" receiveShadows="true"/>
-    <Shape shapeId="3" name="Concrete_Walls" static="true" clipDistance="400" nodeId="15" materialIds="5" castsShadows="true" receiveShadows="true"/>
+    <Shape shapeId="1" name="Timber_shed" static="true" clipDistance="400" nodeId="14" materialIds="6" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="2" name="Concrete_Floor" static="true" clipDistance="400" nodeId="13" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="3" name="Concrete_Walls" static="true" clipDistance="400" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="Decals" nodeId="22">
+        <Shape shapeId="4" name="Sign" translation="0 6.90832 12.4526" clipDistance="200" nodeId="21" materialIds="18" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="Sign" translation="-11.1539 2.42883 -6.00422" rotation="-180 0 -180" clipDistance="200" nodeId="43" materialIds="18" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="areaDefinitions" nodeId="30">
+        <TransformGroup name="snowAreas" nodeId="31">
+          <TransformGroup name="start1" translation="11.5 0 -5.5" nodeId="32">
+            <TransformGroup name="width" translation="-23 0 0" nodeId="33"/>
+            <TransformGroup name="height" translation="0 0 18.5" nodeId="34"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="clearAreas" nodeId="35">
+          <TransformGroup name="start1" translation="11 0 -5" nodeId="36">
+            <TransformGroup name="width" translation="-22 0 0" nodeId="37"/>
+            <TransformGroup name="height" translation="0 0 17" nodeId="38"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelingAreas" nodeId="39">
+          <TransformGroup name="start1" translation="11.25 0 -5.25" nodeId="40">
+            <TransformGroup name="width" translation="-22.5 0 0" nodeId="41"/>
+            <TransformGroup name="height" translation="0 0 18" nodeId="42"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+    </Shape>
   </Scene>
 
 </i3D>

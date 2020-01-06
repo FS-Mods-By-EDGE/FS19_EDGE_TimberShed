@@ -4,32 +4,27 @@
     <translationsby>Castiga</translationsby>
     <version>1.1.0.0</version>
 	<title><!-- en=English de=German fr=French es=Spanish ru=Russian pl=Polish it=Italian br=Brazilian-Portuguese cs=Chinese(Simplified) ct=Chinese(Traditional) cz=Czech nl=Netherlands hu=Hungary jp=Japanese kr=Korean pt=Portuguese ro=Romanian tr=Turkish -->
-        <en>EDGE Sign</en>
-        <de>EDGE Sign</de>
-        <fr>EDGE Sign</fr>
-        <es>EDGE Sign</es>
-        <ru>EDGE Sign</ru>
-        <pl>EDGE Sign</pl>
-        <it>EDGE Sign</it>
+        <en>Timber Shed</en>
+        <de>Timber Shed</de>
+        <fr>Timber Shed</fr>
+        <es>Timber Shed</es>
+        <ru>Timber Shed</ru>
+        <pl>Timber Shed</pl>
+        <it>Timber Shed</it>
     </title>
     <description>
-        <en><![CDATA[This Repository is a Template Repo for our FS 19 mods. It includes the necessary files for an FS19 mod.
+        <en><![CDATA[This Repository is a Timber Shed.
 
 -All buildings have automatic lighting.
 -All Buildings supports "Seasons" and "Courseplay Six".
 -All Buildings have FillTypeCategories: Farmsilo (to Support Custom Fruits)
-
---Technical Info--
 
 Small Grain Silo:
 Price: 110.000€
 Upkeep: 45€ Daily.
 Size: 14 x 15 Meters.
 Capacity: 100.000 Litre.
-Overloading Speed 2000 Liters Per Second.
-
-Changelog 1.0.0.0:
-- Initial Realease.]]></en>
+Overloading Speed 2000 Liters Per Second.]]></en>
 
 <de><![CDATA[Einige Silos für die Lagerung von Korn. Das Paket enthält vier Hofsilos und 6 Siloerweiterungen.
 
@@ -37,17 +32,12 @@ Changelog 1.0.0.0:
 -Alle Gebäude unterstützen "Seasons" und "Courseplay Six".
 -Alle Gebäude haben FillTypeCategories: Farmsilo (zur Unterstützung benutzerdefinierter Früchte)
 
---Technische Information--
-
 Kleines Getreidesilo:
 Preis: 110.000 €
 Unterhalt: 45 € Täglich.
 Größe: 14 x 15 Meter.
 Fassungsvermögen: 100.000 Liter.
-Überladegeschwindigkeit 2000 Liter pro Sekunde.
-
-Änderungsprotokoll 1.0.0.0:
-- Erstveröffentlichung.]]></de>
+Überladegeschwindigkeit 2000 Liter pro Sekunde.]]></de>
 
         <fr><![CDATA[Quelques silos pour stocker votre Grain. Le pack contient 4 silos de ferme et 6 extensions de silo.
 
@@ -55,17 +45,12 @@ Fassungsvermögen: 100.000 Liter.
 -Tous les bâtiments prennent en charge "Seasons" et "Courseplay Six".
 -Tous les bâtiments ont FillTypeCategories: Farmsilo (pour prendre en charge les fruits personnalisés)
 
---Info technique--
-
 Silo à petits grains:
 Prix: 110.000 €
 Entretien: 45 € par jour.
 Taille: 14 x 15 mètres.
 Capacité: 100.000 litres.
-Vitesse de surcharge 2000 litres par seconde.
-
-Changer le journal 1.0.0.0:
-- Première version.]]></fr>
+Vitesse de surcharge 2000 litres par seconde.]]></fr>
 
         <es><![CDATA[Algunos silos para almacenar tu grano. El paquete contiene 4 silos de granja y 6 extensiones de silo.
 
@@ -73,17 +58,12 @@ Changer le journal 1.0.0.0:
 -Todos los edificios son compatibles con "Seasons" y "Courseplay Six".
 -Todos los edificios tienen FillTypeCategories: Farmsilo (para admitir frutas personalizadas)
 
---Información técnica--
-
 Silo de grano pequeño:
 Precio: 110.000 €
 Mantenimiento: 45 € diarios.
 Tamaño: 14 x 15 metros.
 Capacidad: 100.000 litros.
-Velocidad de sobrecarga de 2000 litros por segundo.
-
-Registro de cambios 1.0.0.0:
-- Versión inicial.]]></es>
+Velocidad de sobrecarga de 2000 litros por segundo.]]></es>
 
         <ru><![CDATA[Некоторые бункеры для хранения вашего зерна. Пакет содержит 4 бункера фермы и 6 расширений бункера.
 
@@ -91,17 +71,12 @@ Registro de cambios 1.0.0.0:
 -Все здания поддерживают "Seasons" и "Courseplay Six".
 -Все здания имеют FillTypeCategories: Farmsilo (для поддержки пользовательских фруктов)
 
---Техническая информация--
-
 Бункер для мелкого зерна:
 Цена: 110.000 €
 Содержание: 45 € в день.
 Размер: 14 х 15 метров.
 Вместимость: 100.000 л.
-Скорость перегрузки 2000 литров в секунду.
-
-Изменения 1.0.0.0:
-- Первый выпуск.]]></ru>
+Скорость перегрузки 2000 литров в секунду.]]></ru>
 
         <pl><![CDATA[Niektóre silosy do przechowywania zboża. Pakiet zawiera 4 silosy rolnicze i 6 przedłużeń silosów.
 
@@ -109,44 +84,51 @@ Registro de cambios 1.0.0.0:
 -Wszystkie budynki obsługują „Pory roku” i „Courseplay Six”.
 -Wszystkie budynki mają FillTypeCategory: Farmsilo (do obsługi niestandardowych owoców)
 
---Informacje techniczne--
-
 Silos o małych ziarnach:
 Cena: 110.000 €
 Utrzymanie: 45 € dziennie.
 Rozmiar: 14 x 15 metrów.
 Pojemność: 100 000 litrów.
-Prędkość przeciążenia 2000 litrów na sekundę.
-
-Lista zmian 1.0.0.0:
-- Pierwsze wydanie.]]></pl>
+Prędkość przeciążenia 2000 litrów na sekundę.]]></pl>
         <it><![CDATA[Alcuni silos per conservare il grano. Il pacchetto contiene 4 silos agricoli e 6 estensioni per silo.
 
 -Tutti gli edifici hanno l'illuminazione automatica.
 -Tutti gli edifici supportano "Seasons" e "Courseplay Six".
 -Tutti gli edifici hanno FillTypeCategories: Farmsilo (per supportare la frutta personalizzata)
 
---Informazioni tecniche--
-
 Silo per cereali piccoli:
 Prezzo: 110.000 €
 Manutenzione: 45 € al giorno.
 Dimensioni: 14 x 15 metri.
 Capacità: 100.000 litri.
-Velocità di sovraccarico 2000 litri al secondo.
-
-Elenco modifiche 1.0.0.0:
-- Realease iniziale.]]></it>
+Velocità di sovraccarico 2000 litri al secondo.]]></it>
 	</description>
-    <iconFilename>EdgeSign_Icon.dds</iconFilename>
+    <iconFilename>TimberShed_Icon.dds</iconFilename>
     <multiplayer supported="true"/>
     <storeItems>
-        <storeItem xmlFilename="data/EdgeSign.xml"/>
+        <storeItem xmlFilename="data/TimberShed.xml"/>
     </storeItems>
-	<l10n filenamePrefix="modDesc/modDesc_l10n"/>
     <brands>
         <brand name="EDGE" title="EDGE Industries" image="store/EDGE_Brand_Logo.dds"/>
     </brands>
+    <l10n>
+        <text name="name_TimberShed">
+            <en>Timber Shed</en>
+            <de>Timber Shed</de>
+            <fr>Timber Shed</fr>
+            <es>Timber Shed</es>
+            <ru>Timber Shed</ru>
+            <pl>Timber Shed</pl>
+        </text>
+        <text name="function_TimberShed">
+            <en>Timber Shed. It's Huge so u can park any vehicle inside it.</en>
+            <de>Timber Shed. 10% Lieferkosten, 15% auf die Ernte.</de>
+            <fr>Timber Shed. ici, vous pouvez acheter ce que vous voulez, les livreurs prennent 10% et 15% de toute récolte.</fr>
+            <es>Timber Shed. Aquí puede comprar cualquier cosa que desee, la gente de entrega se lleva el 10% y el 15% de cualquier cosecha.</es>
+            <ru>Timber Shed. Здесь вы можете купить все, что захотите, люди, занимающиеся доставкой, получают 10% и 15% на любой урожай.</ru>
+            <pl>Timber Shed. Tutaj możesz kupić wszystko, co ci się podoba, a doręczyciele biorą 10%, a 15% na dowolne zbiory.</pl>
+        </text>
+    </l10n>
     <credits><![CDATA[
 ## Contributors
 - Castiga, EDGE Gaming

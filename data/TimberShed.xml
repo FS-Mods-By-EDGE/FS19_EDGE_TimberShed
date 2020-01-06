@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable>
+    <storeData>
+        <name>$l10n_name_TimberShed</name>
+        <functions>
+            <function>$l10n_function_TimberShed</function>
+        </functions>
+        <image>store/store_TimberShed.dds</image>
+        <price>30000</price>
+        <dailyUpkeep>5</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>EDGE</brand>
+        <species>placeable</species>
+        <category>sheds</category>
+    </storeData>
+    <placeableType>placeable</placeableType>
+    <filename>data/TimberShed.i3d</filename>
+    <placement testSizeX="23" testSizeZ="18" sizeX="22" sizeZ="17" useRandomYRotation="false" useManualYRotation="true"/>
+    <clearAreas>
+        <clearArea startNode="3|1|0" widthNode="3|1|0|0" heightNode="3|1|0|1"/>
+    </clearAreas>
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="3|2|0" widthNode="3|2|0|0" heightNode="3|2|0|1" groundType="dirt"/>
+        </levelAreas>
+    </leveling>
+    <seasons>
+        <maskAreas>
+            <maskArea startNode="3|0|0" widthNode="3|0|0|0" heightNode="3|0|0|1"/>
+        </maskAreas>
+    </seasons>
+    <tipOcclusionUpdateArea sizeX="20" sizeZ="16"/>
+</placeable>
